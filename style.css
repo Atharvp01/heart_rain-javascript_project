@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    color: antiquewhite;
+}
+
+.heart{
+    position: fixed;
+    top: -1vh;
+    animation: fall 3s linear forwards;
+    transform: translateY(0);
+    font-size: 2rem;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
